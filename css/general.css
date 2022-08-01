@@ -1,13 +1,8 @@
-.main{
+body {
     margin: 0;
-    height: 100vh;
-    
 }
 
-.container {
-    overflow-x: hidden;
-    
-}
+/* seccion banner*/
 header .banner{
     width: 100%;
     height: 464px;
@@ -20,6 +15,7 @@ header .banner{
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    text-align: center;
 }
 .banner h1, h2{
     color: aliceblue;
@@ -43,6 +39,7 @@ margin-top: 20px;
 
 }
 
+/* seccion problematica*/ 
 .problematica{
     max-width: 936px;
    display: flex;
