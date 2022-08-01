@@ -1,0 +1,90 @@
+.main{
+    margin: 0;
+    height: 100vh;
+    
+}
+
+.container {
+    overflow-x: hidden;
+    
+}
+header .banner{
+    width: 100%;
+    height: 464px;
+    max-height: 624px;
+    background-image: url(../img/desktop.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.banner h1, h2{
+    color: aliceblue;
+    font-family: 'Helvetica Neue LT Pro';
+    
+}
+
+.banner h1 {
+    font-size: 90px;
+    margin-top: 121px;
+}
+
+.banner h2{
+    font-size: 50px;
+}
+
+.banner img {
+    width: 197px;
+height: 60px;
+margin-top: 20px;
+
+}
+
+.problematica{
+    max-width: 936px;
+   display: flex;
+   flex-direction: column;
+  justify-content: space-around;
+   align-items: center;
+   margin: 0 auto;
+   padding: 100px 0 120px 0;
+}
+
+.problematica h2 {
+    font-size: 50px;
+    color: #212121;
+    padding: 20px 0;
+    
+}
+
+.linea {
+    width: 182px;
+    height: 8px;    
+    background: #BFC732;
+    border-radius: 31px;
+    
+}
+
+.problematica img {
+    width: 524px;
+height: 348px;
+border-radius: 50px;
+padding: 20px 0;
+}
+
+.problematica p {
+    width: 831px;
+    height: 100px;
+    
+    font-family: 'Helvetica Neue LT Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 144%;
+    text-align: center;
+color: #212121;
+padding: 20px 0;
+}
