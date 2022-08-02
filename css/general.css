@@ -3,58 +3,74 @@ body {
 }
 
 /* seccion banner*/
-header .banner{
+.banner{
     width: 100%;
-    height: 464px;
     max-height: 624px;
+    height: 100%;
     background-image: url(../img/desktop.png);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
+    
+}
+
+.banner .container{
     display: flex ;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     text-align: center;
+    padding: 121px 0;
 }
+
 .banner h1, h2{
     color: aliceblue;
     font-family: 'Helvetica Neue LT Pro';
+    margin: 10px 0;
     
 }
 
 .banner h1 {
     font-size: 90px;
-    margin-top: 121px;
+    line-height: 105px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 0;
 }
 
 .banner h2{
     font-size: 50px;
+    line-height: 144%;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 .banner img {
     width: 197px;
-height: 60px;
-margin-top: 20px;
+    height: 60px;
+    margin-top: 99px;
 
 }
 
 /* seccion problematica*/ 
 .problematica{
+    width: 100%;
+}
+
+.problematica .container {
     max-width: 936px;
-   display: flex;
-   flex-direction: column;
-  justify-content: space-around;
-   align-items: center;
-   margin: 0 auto;
-   padding: 100px 0 120px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 88px auto;
+    
 }
 
 .problematica h2 {
     font-size: 50px;
     color: #212121;
-    padding: 20px 0;
-    
+    padding: 20px 0;    
 }
 
 .linea {
@@ -62,26 +78,89 @@ margin-top: 20px;
     height: 8px;    
     background: #BFC732;
     border-radius: 31px;
+    margin: 30px 0;
     
 }
 
 .problematica img {
     width: 524px;
-height: 348px;
-border-radius: 50px;
-padding: 20px 0;
+    height: 348px;
+    border-radius: 50px;
+    padding: 20px 0;
 }
 
 .problematica p {
     width: 831px;
     height: 100px;
-    
+    margin-top: 30px;
     font-family: 'Helvetica Neue LT Pro';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 144%;
     text-align: center;
-color: #212121;
-padding: 20px 0;
+    color: #212121;
+    padding: 20px 0;
 }
+
+/* Sección consejos */
+
+.consejos .container .imagen{
+    background-image: url(../img/consejos.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1300px;
+   
+    height: 500px;
+    position: relative;
+}
+
+.consejos .container h2{
+    font-size: 58px;
+    line-height: 68px;
+    color: #212121;
+    text-align: center;
+    margin-bottom: 44px;
+}
+
+.consejos .container .items{
+    display: flex;
+}
+
+.consejos .container .item{
+    width: 317px;
+    height: 213px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 35px;
+    gap: 20px;
+    font-size: 36px;
+    line-height: 42px;
+    color: #212121;
+    text-align: center;
+position: relative;
+top: 320px
+}
+
+.consejos .container .items .item .punto{
+        width: 8px;
+        height: 8px;    
+        background: #BFC732;
+        border-radius: 50px;    
+}
+
+/* .consejos .container .rotar .punto{
+    width: 8px;
+    height: 8px;    
+    background: #BFC732;
+    border-radius: 50px;    
+}
+
+.consejos .container .monitoreo .punto{
+    width: 8px;
+    height: 8px;    
+    background: #BFC732;
+    border-radius: 50px;    
+} */
