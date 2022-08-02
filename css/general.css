@@ -315,3 +315,94 @@ gap: 28px;
     max-width: 858px;
     border-radius: 14px 0px 0px 14px;
 }
+
+/* Mobile */
+
+@media screen and (max-width: 360px)  {
+/* Banner  */
+    .banner .container h1 {
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 14px;
+    }
+
+    .banner .container h2 {
+        font-size: 20px;
+        line-height: 140%;
+        margin-bottom: 33px;
+    }
+
+    .banner .container img {
+        width: 118px;
+        
+    }
+
+    /* Problematica */
+    
+    .problematica .container h2 {
+        font-size: 34px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .linea {
+        width: 182px;
+    }
+
+    .problematica .container img {
+        max-width: 320px;
+    }
+
+    .problematica .container p {
+        font-size: 20px;
+        line-height: 144%;
+        text-align: center;
+        max-width: 320px;
+    }
+
+    /* Consejos  */
+
+    .consejos .container h2 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .consejos .container .imagen{
+        background-image: none;
+    }
+
+    .consejos .container .items{
+        display: flex;
+        flex-direction: column;
+        max-width: 286px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .consejos .container .items .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 20px auto;
+        background: #BFC732;
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    .consejos .container .items .item h3{
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .consejos .container .items .item img{
+        max-width: 86px;
+    }
+
+    .consejos .container .items .item p{
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+}
