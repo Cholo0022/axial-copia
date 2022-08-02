@@ -110,7 +110,6 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     max-width: 1300px;
-   
     height: 500px;
     position: relative;
 }
@@ -140,8 +139,8 @@ body {
     line-height: 42px;
     color: #212121;
     text-align: center;
-position: relative;
-top: 320px
+/* position: relative;
+top: 320px */
 }
 
 .consejos .container .items .item .punto{
@@ -151,16 +150,168 @@ top: 320px
         border-radius: 50px;    
 }
 
-/* .consejos .container .rotar .punto{
-    width: 8px;
-    height: 8px;    
-    background: #BFC732;
-    border-radius: 50px;    
+/* Seccion campaña */
+
+.campania .container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 120 auto;
+    align-items: center;
 }
 
-.consejos .container .monitoreo .punto{
-    width: 8px;
-    height: 8px;    
+.campania .container h2 {
+    font-size: 58px;
+    line-height: 68px;
+    text-align: center;
+    color: #212121;
+    margin-bottom: 30px;    
+}
+
+.campania .container .campania-container-img {
+    display: flex;
+    margin-top: 30px;
+    max-width: 668px;
+    justify-content: center;
+}
+
+.campania-container-img .axial{
+    width: 616px;
+    margin-right: 90px;
+}
+
+.campania-container-img .img-campo{
+    width: 543px;
+}
+
+.campania .container .campania-texto{
+    max-width: 734px;
+}
+
+.campania .container .campania-texto p {
+    margin: 30px auto;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #212121;
+}
+
+.campania .container .botones {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1148px;
+    width: 100%;
+}
+
+.campania .container .botones button{
+    align-items: center;
+    padding: 20px 60px;
+    gap: 10px;
+    width: 427px;
+    height: 69px;
+    background: #ED7D00;
+    border-radius: 12px;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.205em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+}
+
+/* Beneficios */
+
+.beneficios .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 120px auto;
+    max-width: 770px;
+    width: 100%;
+}
+
+.beneficios .container h2 {
+    font-size: 40px;
+    line-height: 64px;
+    text-align: center;
+    color: #212121;
+    margin-bottom: 30px;
+}
+
+.beneficios .container .beneficios-img {
+    display: flex;
+    margin-top: 30px;
+}
+
+.beneficios .container .beneficios-img .beneficio-retorno {
+    max-width: 343px;
     background: #BFC732;
-    border-radius: 50px;    
-} */
+    border-radius: 5px;
+    margin: 30px 111px 20px 0;
+    gap: 25px;
+    padding: 30px;
+}
+
+.beneficios .container .beneficios-img .beneficio-control {
+    max-width: 316px;
+    background: #BFC732;
+    border-radius: 5px;
+    margin: 30px 0 20px 0;
+    gap: 25px;
+    padding: 30px;
+}
+
+.beneficios .container .beneficios-img .beneficio-retorno .retorno {
+    max-width: 125px;
+}
+
+.beneficios .container .beneficios-img .beneficio-control .control {
+    max-width: 120px;
+}
+
+.beneficios .container .beneficios-img .beneficio-control h3 p {
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #212121;
+}
+
+/* Contacto */
+
+.contacto .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: #BFC732;
+}
+
+.contacto .container .text-left{
+    width: calc(100% -858px);
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+gap: 28px;
+}
+
+.contacto .container .text-left p {
+    font-size: 20px;
+    line-height: 160%;
+    color: #212121;
+}
+
+.contacto .container .text-left img {
+    width: 65px;
+}
+
+.contacto .container .contacto-img {
+    max-width: 858px;
+    border-radius: 14px 0px 0px 14px;
+}
