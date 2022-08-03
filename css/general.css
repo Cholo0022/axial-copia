@@ -71,6 +71,7 @@ body {
     font-size: 50px;
     color: #212121;
     padding: 20px 0;    
+    text-align: center;
 }
 
 .linea {
@@ -90,10 +91,8 @@ body {
 }
 
 .problematica p {
-    width: 831px;
-    height: 100px;
+    max-width: 831px;
     margin-top: 30px;
-    font-family: 'Helvetica Neue LT Pro';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -152,13 +151,25 @@ top: 320px */
 
 /* Seccion campaña */
 
+.campania {
+    /* max-width: 1339px; */
+    
+}
+
+.container{
+    /* max-width: 1339px;
+    width: 100%; */
+    
+}
+
 .campania .container{
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    margin: 120 auto;
+    margin: 120px auto;
     align-items: center;
+    /* max-width: 1339px; */
 }
 
 .campania .container h2 {
@@ -172,21 +183,24 @@ top: 320px */
 .campania .container .campania-container-img {
     display: flex;
     margin-top: 30px;
-    max-width: 668px;
+    align-items: center;
     justify-content: center;
 }
 
 .campania-container-img .axial{
-    width: 616px;
+    /* max-width: 616px; */
+    width: calc(100% - 543px);
     margin-right: 90px;
 }
 
 .campania-container-img .img-campo{
-    width: 543px;
+    max-width: 543px;
+    /* width: 100%; */
+    /* width: calc(100% - 616px); */
 }
 
 .campania .container .campania-texto{
-    max-width: 734px;
+    /* max-width: 734px; */
 }
 
 .campania .container .campania-texto p {
