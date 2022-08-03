@@ -23,6 +23,10 @@ body {
     padding: 121px 0;
 }
 
+.banner .container .axial-img-mobile{
+    display: none;
+}
+
 .banner h1, h2{
     color: aliceblue;
     font-family: 'Helvetica Neue LT Pro';
@@ -104,7 +108,7 @@ body {
 
 /* Sección consejos */
 
-.consejos .container .imagen{
+ /* .consejos .container .imagen{
     background-image: url(../img/consejos.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -138,29 +142,19 @@ body {
     line-height: 42px;
     color: #212121;
     text-align: center;
-/* position: relative;
-top: 320px */
+     position: relative;
+top: 320px; 
 }
+
 
 .consejos .container .items .item .punto{
         width: 8px;
         height: 8px;    
         background: #BFC732;
         border-radius: 50px;    
-}
+}  */
 
 /* Seccion campaña */
-
-.campania {
-    /* max-width: 1339px; */
-    
-}
-
-.container{
-    /* max-width: 1339px;
-    width: 100%; */
-    
-}
 
 .campania .container{
     display: flex;
@@ -169,7 +163,6 @@ top: 320px */
     justify-content: center;
     margin: 120px auto;
     align-items: center;
-    /* max-width: 1339px; */
 }
 
 .campania .container h2 {
@@ -187,20 +180,14 @@ top: 320px */
     justify-content: center;
 }
 
-.campania-container-img .axial{
-    /* max-width: 616px; */
+.campania .container .campania-container-img .axial{
     width: calc(100% - 543px);
     margin-right: 90px;
 }
 
-.campania-container-img .img-campo{
+.campania .container .campania-container-img .img-campo{
     max-width: 543px;
-    /* width: 100%; */
-    /* width: calc(100% - 616px); */
-}
-
-.campania .container .campania-texto{
-    /* max-width: 734px; */
+    width: 100%; 
 }
 
 .campania .container .campania-texto p {
@@ -214,7 +201,6 @@ top: 320px */
 .campania .container .botones {
     display: flex;
     justify-content: space-around;
-    max-width: 1148px;
     width: 100%;
 }
 
@@ -233,6 +219,7 @@ top: 320px */
     text-transform: uppercase;
     color: #FFFFFF;
     border: none;
+    display: flex;
 }
 
 /* Beneficios */
@@ -258,14 +245,16 @@ top: 320px */
 
 .beneficios .container .beneficios-img {
     display: flex;
-    margin-top: 30px;
+    margin-top: 30px 0 20px 0;
+    justify-content: space-between;
+    gap: 111px;
 }
 
 .beneficios .container .beneficios-img .beneficio-retorno {
     max-width: 343px;
     background: #BFC732;
     border-radius: 5px;
-    margin: 30px 111px 20px 0;
+    /* margin: 30px 0 20px 0; */
     gap: 25px;
     padding: 30px;
 }
@@ -274,7 +263,7 @@ top: 320px */
     max-width: 316px;
     background: #BFC732;
     border-radius: 5px;
-    margin: 30px 0 20px 0;
+    /* margin: 30px 0 20px 0; */
     gap: 25px;
     padding: 30px;
 }
@@ -297,6 +286,7 @@ top: 320px */
 /* Contacto */
 
 .contacto .container {
+    max-width: 1339px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -306,13 +296,13 @@ top: 320px */
 }
 
 .contacto .container .text-left{
-    width: calc(100% -858px);
+    width: calc(100% - 858px);
     text-align: start;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 10px;
-gap: 28px;
+    gap: 28px;
 }
 
 .contacto .container .text-left p {
@@ -327,13 +317,28 @@ gap: 28px;
 
 .contacto .container .contacto-img {
     max-width: 858px;
+    width: 100%;
     border-radius: 14px 0px 0px 14px;
+}
+
+.contacto .container .whatsapp-img-mobile {
+    display: none;
+}
+
+.contacto .container .contactanos-h3-mobile{
+    display: none;
 }
 
 /* Mobile */
 
 @media screen and (max-width: 360px)  {
 /* Banner  */
+
+    .banner .container .axial-img-mobile{
+        display: block;
+        width: 175px;
+    }
+
     .banner .container h1 {
         font-size: 36px;
         line-height: 42px;
@@ -346,9 +351,9 @@ gap: 28px;
         margin-bottom: 33px;
     }
 
-    .banner .container img {
+    .banner .container .syngenta {
         width: 118px;
-        
+        margin: 24px 0 33px 0;
     }
 
     /* Problematica */
@@ -365,6 +370,7 @@ gap: 28px;
 
     .problematica .container img {
         max-width: 320px;
+        order: 3;
     }
 
     .problematica .container p {
@@ -372,11 +378,12 @@ gap: 28px;
         line-height: 144%;
         text-align: center;
         max-width: 320px;
+        order: 2;
     }
 
     /* Consejos  */
 
-    .consejos .container h2 {
+    /* .consejos .container h2 {
         font-size: 34px;
         line-height: 40px;
     }
@@ -417,6 +424,94 @@ gap: 28px;
     .consejos .container .items .item p{
         font-size: 22px;
         line-height: 26px;
+    } */
+    
+    /* campania  */
+    .campania .container h2 {
+        font-size: 34px;
+        line-height: 41px;
+    }
+
+    .campania .container .img-campo {
+        display: none;
+    }
+
+    .campania .container .campania-container-img .axial {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .campania .container .botones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .campania .container .botones button{
+        width: 342px;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+    button .comprar{
+        display: flex;
+    }
+    
+    
+    /* beneficios  */
+    .beneficios .container h2{
+        font-size: 34px;
+        line-height: 39px;
+    }
+
+    .beneficios .container .beneficios-img {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Contacto  */
+
+    .contacto .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .contacto .container .contacto-img {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .contacto .container .text-left p {
+        font-size: 20px;
+        line-height: 160%;
+        width: 300px;
+    }
+
+    .contacto .container .text-left img {
+        display: none;
+    }
+
+    .contacto .container .whatsapp-img-mobile {
+        display: block;
+    }
+
+    .contacto .container .contactanos-h3-mobile{
+        display: block;
+        order: 1;
+    }
+
+    .contacto .container .text-left h3 {
+        display: none;
+    }
+
+    .contacto .container .contactanos-mobile{
+        width: 100%;
+        display: flex;
+        background: #FFFFFF;
+        justify-content: space-around;
+        margin: 0;
+        padding-bottom: 44px;
     }
 
 }
