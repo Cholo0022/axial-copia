@@ -163,6 +163,8 @@ top: 320px;
     justify-content: center;
     margin: 120px auto;
     align-items: center;
+    max-width: 1300px;
+
 }
 
 .campania .container h2 {
@@ -175,22 +177,29 @@ top: 320px;
 
 .campania .container .campania-container-img {
     display: flex;
-    margin-top: 30px;
+    margin: 30px auto;
     align-items: center;
     justify-content: center;
+    gap: 90px;
 }
 
 .campania .container .campania-container-img .axial{
-    width: calc(100% - 543px);
-    margin-right: 90px;
+    width: 50%;
 }
 
 .campania .container .campania-container-img .img-campo{
-    max-width: 543px;
-    width: 100%; 
+    width: 50%;
 }
 
-.campania .container .campania-texto p {
+.campania .container .campania-container-img .axial img{
+    width: 100%;
+}
+
+.campania .container .campania-container-img .img-campo img{
+    width: 100%;
+}
+
+.campania .container .axial p {
     margin: 30px auto;
     font-size: 20px;
     line-height: 23px;
@@ -286,7 +295,6 @@ top: 320px;
 /* Contacto */
 
 .contacto .container {
-    width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -295,8 +303,8 @@ top: 320px;
 }
 
 .contacto .container .text-left{
-    width: calc(100% - 858px);
-    text-align: start;
+    width: 50%;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -314,11 +322,14 @@ top: 320px;
     width: 65px;
 }
 
-.contacto .container .contacto-img {
-    max-width: 858px;
-    width: 100%;
+.contacto .container .img-right {
+    width: 50%;
+}
+
+.contacto .container .img-right img {
     border-radius: 14px 0px 0px 14px;
     margin-right: 0;
+    width: 100%;
 }
 
 .contacto .container .whatsapp-img-mobile {
@@ -331,7 +342,7 @@ top: 320px;
 
 /* Mobile */
 
-@media screen and (max-width: 360px)  {
+@media screen and (max-width: 767px)  {
 /* Banner  */
 
     .banner .container .axial-img-mobile{
