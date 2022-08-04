@@ -302,6 +302,13 @@ top: 320px;
     background: #BFC732;
 }
 
+.contacto .contactanos-desktop {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+    gap: 8px;
+}
+
 .contacto .container .text-left{
     width: 50%;
     text-align: center;
@@ -310,6 +317,7 @@ top: 320px;
     justify-content: space-around;
     padding: 10px;
     gap: 28px;
+    align-items: center;
 }
 
 .contacto .container .text-left p {
@@ -332,11 +340,12 @@ top: 320px;
     width: 100%;
 }
 
-.contacto .container .whatsapp-img-mobile {
+.whatsapp-img-mobile{
     display: none;
 }
 
-.contacto .container .contactanos-h3-mobile{
+
+ .contactanos-h3-mobile{
     display: none;
 }
 
@@ -499,23 +508,6 @@ top: 320px;
         width: 300px;
     }
 
-    .contacto .container .text-left img {
-        display: none;
-    }
-
-    .contacto .container .whatsapp-img-mobile {
-        display: block;
-    }
-
-    .contacto .container .contactanos-h3-mobile{
-        display: block;
-        order: 1;
-    }
-
-    .contacto .container .text-left h3 {
-        display: none;
-    }
-
     .contacto .container .contactanos-mobile{
         width: 100%;
         display: flex;
@@ -524,5 +516,14 @@ top: 320px;
         margin: 0;
         padding-bottom: 44px;
     }
+
+    .contacto .container .text-left {
+        width: 100%;
+    }
+
+    .contacto .container .img-right{
+        width: 100%;
+    }
+
 
 }
